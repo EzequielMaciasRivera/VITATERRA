@@ -1,0 +1,123 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: url('img/hero-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+}
+
+.navbar .nav-link.active {
+  color: #9C27B0 !important;
+  font-weight: 600;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+}
+.hero {
+  background: url('img/fondo-vitaterra.jpg') center center / cover no-repeat;
+  height: 100vh; /* ocupa toda la altura de la pantalla */
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* oscurece ligeramente para resaltar el texto */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh; /* ajusta altura en móviles */
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+#nosotros {
+  background-color: #f8f9fa;
+}
+
+#contacto form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+#cotizacionForm {
+  transition: transform 0.3s ease;
+}
+#cotizacionForm:hover {
+  transform: scale(1.02);
+}
+#metrosValor {
+  color: #9C27B0; /* lila para destacar */
+}
+#metrosValor {
+  color: #9C27B0; /* lila para destacar */
+}
+#resultado {
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#resultado .card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#resultado h3 {
+  font-weight: 700;
+  color: #0d6efd;
+  text-transform: uppercase;
+}
+
+
+.parallax {
+  background-image: url('img/casa.jpg'); /* coloca aquí tu imagen */
+  background-attachment: fixed; /* efecto parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white; /* texto en blanco */
+  position: relative;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* oscurece un poco para resaltar el texto */
+}
+
+.parallax .container {
+  position: relative;
+  z-index: 2;
+}
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important; /* azul Bootstrap */
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
